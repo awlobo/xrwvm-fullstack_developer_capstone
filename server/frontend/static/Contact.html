@@ -1,89 +1,86 @@
 <html>
+
 <head>
     <link rel="stylesheet" href="/static/style.css">
     <link rel="stylesheet" href="/static/bootstrap.min.css">
 </head>
 <div>
-  <nav class="navbar navbar-expand-lg navbar-light" style="background-color:darkturquoise; height: 1in;">
-    <div class="container-fluid">
-      <h2 style="padding-right: 5%;">Dealerships</h2>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarText">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link" style="font-size: larger;" aria-current="page" href="/">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" style="font-size: larger;" href="/about">About Us</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" style="font-size: larger;" href="/contact">Contact Us</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-  <div class="card" style="width: 80%;margin: auto; margin-top:5%;">
-    <div class="banner" name="about-header">
-        <h1>Contact Us</h1>
-        Welcome to Best Cars dealership, home to the best cars in North America. We deal in sale of domestic and imported cars at reasonable prices.
-    </div>
-    
-    <div class="container py-5">
-    
-    <div class="row">
-      <!-- Contact Info -->
-      <div class="col-md-6 mb-4">
-        <h4>Best Cars</h4>
-        <p>1234 Main Street<br>Cityville, ST 54321</p>
-        <p><strong>Phone:</strong> (123) 456-7890</p>
-        <p><strong>Email:</strong> contact@bestcars.com</p>
-        <p><strong>Hours:</strong><br>
-          Mon–Fri: 9:00 AM – 6:00 PM<br>
-          Sat: 10:00 AM – 4:00 PM<br>
-          Sun: Closed
-        </p>
-      </div>
-
-      <!-- Contact Form -->
-      <div class="col-md-6 mb-4">
-        <form>
-          <div class="mb-3">
-            <label for="name" class="form-label">Your Name</label>
-            <input type="text" class="form-control" id="name" placeholder="John Doe">
-          </div>
-          <div class="mb-3">
-            <label for="email" class="form-label">Your Email</label>
-            <input type="email" class="form-control" id="email" placeholder="you@example.com">
-          </div>
-          <div class="mb-3">
-            <label for="message" class="form-label">Your Message</label>
-            <textarea class="form-control" id="message" rows="4" placeholder="How can we help you?"></textarea>
-          </div>
-          <button type="submit" class="btn btn-primary">Send Message</button>
-        </form>
-      </div>
-    </div>
-
-    <!-- Map  -->
-    <div class="row">
-        <div class="col-8">
-            <h4 class="mt-5 mb-3">Find Us</h4>
-            <div class="ratio ratio-16x9">
-            <iframe 
-                src="https://www.google.com/maps?q=1234+Main+Street,+Cityville,+ST+54321&output=embed" 
-                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy">
-            </iframe>
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color:darkturquoise; height: 1in;">
+        <div class="container-fluid">
+            <h2 style="padding-right: 5%;">Dealerships</h2>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" style="font-size: larger;" aria-current="page" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" style="font-size: larger;" href="/about">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" style="font-size: larger;" href="/contact">Contact Us</a>
+                    </li>
+                </ul>
             </div>
         </div>
+    </nav>
+    <div class="card" style="width: 80%;margin: auto; margin-top:5%;">
+        <div class="banner" name="about-header">
+            <h1>Contact Us</h1>
+            Welcome to Best Cars dealership, home to the best cars in North America. We deal in sale of domestic and
+            imported cars at reasonable prices.
+        </div>
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <h4>Best Cars</h4>
+                    <p>1234 Main Street<br>Cityville, ST 54321</p>
+                    <p><strong>Phone:</strong> (123) 456-7890</p>
+                    <p><strong>Email:</strong> contact&commat;bestcars.com</p>
+                    <p><strong>Hours:</strong><br></p>
+                    <p>
+                        Mon-Fri: 9:00 AM - 6:00 PM<br>
+                        Sat: 10:00 AM - 4:00 PM<br>
+                        Sun: Closed
+                    </p>
+                </div>
+
+                <div class="col-md-6 mb-4">
+                    <form>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Your Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="John Doe">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Your Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="you&commat;example.com">
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Your Message</label>
+                            <textarea class="form-control" id="message" rows="4"
+                                placeholder="How can we help you?"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Map  -->
+            <div class="row">
+                <div class="col-8">
+                    <h4 class="mt-5 mb-3">Find Us</h4>
+                    <div class="ratio ratio-16x9">
+                        <iframe src="https://www.google.com/maps?q=1234+Main+Street,+Cityville,+ST+54321&output=embed"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-    </div>
-    </div>
-    </div>
-    
 </div>
 
 </html>
