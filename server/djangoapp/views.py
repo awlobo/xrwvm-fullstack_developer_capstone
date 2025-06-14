@@ -8,26 +8,17 @@
 # from django.contrib import messages
 # from datetime import datetime
 from .restapis import get_request, analyze_review_sentiments, post_review
-
-
-
 from django.http import JsonResponse
 from django.contrib.auth import login, authenticate
 import logging
 import json
 from django.views.decorators.csrf import csrf_exempt
 from .populate import initiate
-
 from .models import CarMake, CarModel
-
 
 # Get an instance of a logger
 logger = logging.getLogger(__name__)
 
-
-# Create your views here.
-
-# Create a `login_request` view to handle sign in request
 @csrf_exempt
 def login_user(request):
     # Get username and password from request.POST dictionary
@@ -44,8 +35,10 @@ def login_user(request):
     return JsonResponse(data)
 
 # Create a `logout_request` view to handle sign out request
-# def logout_request(request):
-# ...
+def logout_request(request):
+    logout(request) # Terminate user session
+    data = {"userName":""} # Return empty username
+    return JsonResponse(data)
 
 # Create a `registration` view to handle sign up request
 # @csrf_exempt
