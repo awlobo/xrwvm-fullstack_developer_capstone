@@ -42,6 +42,13 @@ docker build . -t senti_analyzer
 docker run -d -p 5050:5000 --name senti senti_analyzer
 ```
 
+## Deploy with kubernetes
+
+```bash
+kubectl apply -f deployment.yaml
+kubectl port-forward deployment.apps/dealership 8000:8000
+```
+
 ## Create superuser
 
 ```bash
